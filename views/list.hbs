@@ -1,0 +1,85 @@
+<div class="App-list">
+    
+    <div class="App-listLeft">
+
+        <img class="App-logo" src="/svg/logo.svg" alt="logo svg file">
+
+        <div class="App-listContainer">
+            <h2 class="App-listTitle">¡Tenemos el mejor lugar para ti y tus compañeros!</h2>
+            <img class="App-listImg" src="/img/list.png" alt="img list file">
+        </div>
+
+    </div>
+
+
+    <div class="App-listRight">
+        <h2 class="App-listContextTitle">TOP 3 DE TU CASA IDEAL</h2>
+
+        <div class="App-listHouseContainer">
+            {{#each top_list}}
+            <div class="App-house">
+                <div class="App-houseLeft">
+                    <div class="App-houseImg" style="background-image: url('/img/house/{{Id}}.png')"></div>
+                    <div class="App-houseData">
+                        <h1 class="App-housePrice">${{Precio}}</h1>
+                        <h2 class="App-houseTitle">{{Direccion}}</h2>
+                        <h2 class="App-houseTitle">{{Tipo}}</h2>
+
+                        <div class="App-houseIcons">
+                            <div> <img src="/svg/habitaciones.svg" alt=""> <h4>{{Habitaciones}}</h4> </div>
+                            <div> <img src="/svg/baño.svg" alt=""> <h4>{{Banos}}</h4> </div>
+                            <div> <img src="/svg/metros.svg" alt=""> <h4>{{Terreno}}mts2</h4> </div>
+                        </div>
+
+                        <a class="App-houseButton" href="/house/{{Id}}">Detalles</a>
+
+                    </div>
+                </div>
+                <div class="App-houseRight">
+
+                    <img class="App-houseMatchIcon" src="/svg/match.svg" alt="match img file">
+
+                    <h2 class="App-houseMatch">
+                        {{Match}}%
+                    </h2>
+                </div>
+            </div>
+            {{/each}}
+            
+        </div>
+
+         <h2 class="App-listContextTitle">otras casas</h2>
+
+          <div class="App-listHouseContainer">
+            {{#each other_list}}
+           <div class="App-house">
+                <div class="App-houseLeft">
+                    <div class="App-houseImg" style="background-image: url('/img/house/{{Id}}.png')"></div>
+                    <div class="App-houseData">
+                        <h1 class="App-housePrice">${{Precio}}</h1>
+                        <h2 class="App-houseTitle">{{Direccion}}</h2>
+                        <h2 class="App-houseTitle">{{Tipo}}</h2>
+
+                        <div class="App-houseIcons">
+                            <div> <img src="/svg/habitaciones.svg" alt=""> <h4>{{Habitaciones}}</h4> </div>
+                            <div> <img src="/svg/baño.svg" alt=""> <h4>{{Banos}}</h4> </div>
+                            <div> <img src="/svg/metros.svg" alt=""> <h4>{{Terreno}}mts2</h4> </div>
+                        </div>
+
+                        <a class="App-houseButton" href="/house/{{Id}}">Detalles</a>
+
+                    </div>
+                </div>
+                <div class="App-houseRight">
+
+                    <h2 class="App-houseMatch">
+                        {{Match}}%
+                    </h2>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+    </div>
+
+</div>

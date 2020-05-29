@@ -1,0 +1,61 @@
+<div class="App-roomie">
+
+    <div class="App-roomieLeft">
+
+        <img class="App-logo" src="/svg/logo.svg" alt="logo svg file">
+
+        <div class="App-roomieContainer">
+            <img class="App-roomieImg" src="/img/roomie.png" alt="img roomie file">
+            <h2 class="App-roomieTitle">¡Conocerte a ti y a tus compañeros revelará su casa ideal!</h2>
+        </div>
+
+    </div>
+
+
+    <div class="App-roomieRight">
+        <h2 class="App-roomieMainTitle">Contesta el siguiente formulario</h2>
+
+        <div class="App-roomieContext">
+            <h3 class="App-roomieContextTitle">Tu infomación</h3>
+
+            <div class="App-roomieSelector">
+                <h5 class="App-roomieSelectorTitle">¿Quién eres?</h5>
+                <select class="App-roomieSelectorInput" id="roomie1"></select>
+            </div>
+        </div>
+
+        <div class="App-roomieContext">
+            <h3 class="App-roomieContextTitle">Infomación de tus compañeros de casa</h3>
+
+            <div class="App-roomieSelector">
+                <h5 class="App-roomieSelectorTitle">Nombre de integrante #2</h5>
+                <select class="App-roomieSelectorInput" id="roomie2">
+                </select>
+            </div>
+
+            <div class="App-roomieSelector">
+                <h5 class="App-roomieSelectorTitle">Nombre de integrante #3</h5>
+                <select class="App-roomieSelectorInput" id="roomie3"></select>
+            </div>
+
+            <div class="App-roomieSelector">
+                <h5 class="App-roomieSelectorTitle">Nombre de integrante #4</h5>
+                <select class="App-roomieSelectorInput" id="roomie4"></select>
+            </div>
+        </div>
+
+        <div class="App-roomieContextButton">
+            <div class="App-roomieButton">Siguiente</div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<script>
+    var decodedJson = decodeURIComponent("{{{people_list}}}");
+    var list = JSON.parse(decodedJson);
+</script>
+
+<script language="javascript" type="text/javascript" src="/js/roomie.js"></script>

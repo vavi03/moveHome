@@ -1,0 +1,53 @@
+<div class="App-houseView">
+
+    <div class="App-houseViewLeft">
+        <img class="App-logo" src="/svg/logo.svg" alt="logo svg file">
+
+        <div class="App-houseViewContainer">
+            <img class="App-houseViewImg" src="/img/house/{{house.Id}}.png" alt="img list file">
+        </div>
+
+    </div>
+
+    <div class="App-houseViewRight">
+        <h2 class="App-houseViewTitle">{{house.Tipo}}</h2>
+
+        <div class="App-houseViewDes">
+            <h3>Descripción</h3>
+            <p>{{house.Descripcion}}</p>
+        </div>
+
+        <div class="App-houseViewIcons">
+            <div class="App-houseViewIconData">
+                <img src="/svg/verde.svg" alt="img icon data file">
+                <div>
+                    <h5>{{zonaVerde}}</h5>
+                    <p>Zona Verde</p>
+                </div>
+            </div>
+
+            <div class="App-houseViewIconData">
+                 <img src="/svg/parqueadero.svg" alt="img icon data file">
+                <div>
+                    <h5>{{parqueadero}}</h5>
+                    <p>Parqueadero</p>
+                </div>
+            </div>
+
+            <div class="App-houseViewIconData">
+                 <img src="/svg/mascota.svg" alt="img icon data file">
+                <div>
+                    <h5>{{mascota}}</h5>
+                    <p>Mascotas</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="App-houseViewDes2">
+            <h3>Contacto Arrendatario</h3>
+            <p><strong>{{house.Propietario}}</strong></p>
+            <p><strong>Celular: </strong> {{house.Telefono}}</p>
+        </div>
+    </div>
+
+</div>
